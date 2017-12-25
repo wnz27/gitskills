@@ -131,11 +131,11 @@ $ git commit -m "remove test.txt"
 如github
 你要先设置一下SSH，可以自行百度。比较简单。
 
-要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+要关联一个远程库，使用命令`git remote add origin git@server-name:path/repo-name.git；`
 server-name：path，就用github.com:username，username用你的github账号用户名，repo-name
 用你在github上已经创建的仓库的名字，就是把你的本地仓库托管到github的你建立的仓库，让他们关联。
 
-关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+关联后，使用命令`git push -u origin master`第一次推送master分支的所有内容；
 就是推送你本地仓库的所有内容，不管你这个本地仓库的文件夹有多少文件。
 
 此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
@@ -143,13 +143,14 @@ server-name：path，就用github.com:username，username用你的github账号�
 从远程仓库克隆：
 既然可以把本地的东西同github上的你建立的仓库关联，我们可以去github这个远程仓库中拷贝我们本地没有的
 仓库吗？
-当然可以，比如用这个指令git clone git@github.com:wnz27/gitskills.git
+当然可以，比如用这个指令`git clone git@github.com:wnz27/gitskills.git`
 这个指令的意思是把wnz27这个用户名的主页建立的gitskills这个仓库拷贝到本地电脑上。所以你们需要
 把用户名替换掉还有仓库名（gitskills）替换掉。
-GitHub给出的地址不止一个，还可以用https://github.com/michaelliao/gitskills.git这样的地
-址。实际上，Git支持多种协议，默认的git://使用ssh，但也可以使用https等其他协议。
+GitHub给出的地址不止一个，还可以用`https://github.com/michaelliao/gitskills.git`这样的地
+址。实际上，Git支持多种协议，默认的`git://使用ssh，但也可以使用https等其他协议。`
 什么意思呢？就是这个指令可以这样输：
-git clone https://github.com/wnz27/gitskills.git
+`git clone https://github.com/wnz27/gitskills.git`
+
 使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放http端口的
 公司内部就无法使用ssh协议而只能用https。还记得刚才让你们自行百度SSH吗？如果你们不设置，就只能
 用https的协议了。只能用后一个指令。Git支持多种协议，包括https，但通过ssh支持的原生git协议速
