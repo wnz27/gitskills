@@ -13,9 +13,7 @@ git init 因为已经切换到当前文件夹，你现在输入的指令就是�
 意思是把该文件从工作区添加到git托管，放进stage，或者叫index，暂存区，注意此时该文件并没有放到
 git的master主分支。
 
-该命令可以这么操作：
-
-git add file1 file2 file3
+该命令可以这么操作：`git add file1 file2 file3`
 
 可以一次性提交多个文件到暂存区。
 
