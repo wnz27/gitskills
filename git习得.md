@@ -202,6 +202,8 @@ GitHub给出的地址不止一个，还可以用`https://github.com/michaelliao/
 
 Git支持多种协议，包括https，但通过*ssh支持的原生git协议速度最快*。
 
+### 克隆指定分支仓库
+`git clone -b 分支名称 仓库地址`
 
 ## 问题：
 在使用git 对源代码进行push到gitHub时可能会出错，信息如下：
